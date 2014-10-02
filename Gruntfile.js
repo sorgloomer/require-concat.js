@@ -22,6 +22,14 @@ module.exports = function(grunt) {
                     exports: ['sub.a', '.,-<=', 0, 1]
                 }
             },
+            test3: {
+                options: {
+                    files: "**/*.js",
+                    base: "tests/test3",
+                    output: "dist/test3.js",
+                    exports: ['module1']
+                }
+            },
             "test-circ": {
                 options: {
                     files: "**/*.js",
